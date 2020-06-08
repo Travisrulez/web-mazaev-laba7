@@ -1,0 +1,36 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas: "block1 block1 block2 block2" "block3 block4 block2 block2" "block3 block4 blokc5 blokc5";
+    border: 1px solid black;
+  }
+  
+  .block1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "block11 block11 block12" "block13 block14 block12";
+    grid-area: block1;
+    border: 1px solid black;
+    grid-row-start: 1;
+  
+  }
+  
+  .block11 { grid-area: block11; }
+  
+  .block12 { grid-area: block12; }
+  
+  .block13 { grid-area: block13; }
+  
+  .block14 { grid-area: block14; }
+  
+  .block2 { grid-area: block2; }
+  
+  .block3 { grid-area: block3; }
+  
+  .block4 { grid-area: block4; }
+  
+  .blokc5 { grid-area: blokc5; }
